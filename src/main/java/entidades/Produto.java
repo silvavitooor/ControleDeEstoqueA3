@@ -2,20 +2,22 @@ package entidades;
 
 public class Produto {
     private String nome;
-    private String categoria;
     private int quantidadeMinima;
     private int quantidadeMaxima;
     private int quantidadeTotal;
     private double preco;
+    private Categoria categoria;
 
-    public Produto(String nome, String categoria, int quantidadeMinima, int quantidadeMaxima, int quantidadeTotal, double preco) {
+    public Produto(String nome, int quantidadeMinima, int quantidadeMaxima, int quantidadeTotal, double preco, Categoria categoria) {
         this.nome = nome;
-        this.categoria = categoria;
         this.quantidadeMinima = quantidadeMinima;
         this.quantidadeMaxima = quantidadeMaxima;
         this.quantidadeTotal = quantidadeTotal;
         this.preco = preco;
+        this.categoria = categoria;
     }
+
+    
 
     public void entrada(int quantidade){
         quantidadeTotal += quantidade;
