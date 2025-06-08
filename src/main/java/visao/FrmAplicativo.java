@@ -30,6 +30,7 @@ public class FrmAplicativo extends javax.swing.JFrame {
         jBCadastroDeProdutos = new javax.swing.JButton();
         jBMovimentacao = new javax.swing.JButton();
         jBRelatorios = new javax.swing.JButton();
+        jBSair = new javax.swing.JButton();
         jBReajustePreco = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,6 +68,15 @@ public class FrmAplicativo extends javax.swing.JFrame {
             }
         });
 
+        jBSair.setBackground(new java.awt.Color(52, 152, 219));
+        jBSair.setForeground(new java.awt.Color(255, 255, 255));
+        jBSair.setText("Sair");
+        jBSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBSairActionPerformed(evt);
+            }
+        });
+
         jBReajustePreco.setBackground(new java.awt.Color(52, 152, 219));
         jBReajustePreco.setForeground(new java.awt.Color(255, 255, 255));
         jBReajustePreco.setText("Reajuste de Preço");
@@ -88,6 +98,7 @@ public class FrmAplicativo extends javax.swing.JFrame {
                             .addComponent(jBMovimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBCadastroDeProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBSair, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBReajustePreco, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(406, 406, 406))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -107,7 +118,9 @@ public class FrmAplicativo extends javax.swing.JFrame {
                 .addComponent(jBRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jBReajustePreco, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jBSair, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         pack();
@@ -127,6 +140,10 @@ public class FrmAplicativo extends javax.swing.JFrame {
         FrmRelatorios objeto = new FrmRelatorios();
         objeto.setVisible(true);
     }//GEN-LAST:event_jBRelatoriosActionPerformed
+
+    private void jBSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jBSairActionPerformed
 
     private void jBReajustePrecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBReajustePrecoActionPerformed
         FrmReajustePreco objeto = new FrmReajustePreco();
@@ -173,6 +190,7 @@ public class FrmAplicativo extends javax.swing.JFrame {
     private javax.swing.JButton jBMovimentacao;
     private javax.swing.JButton jBReajustePreco;
     private javax.swing.JButton jBRelatorios;
+    private javax.swing.JButton jBSair;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
