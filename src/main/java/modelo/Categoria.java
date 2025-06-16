@@ -2,9 +2,18 @@ package modelo;
 
 public class Categoria {
     private String nome;
+    private int id;
 
+    public Categoria() {
+    }
+
+    
     public Categoria(String nome) {
         this.nome = nome;
+    }
+
+    public Categoria(int aInt, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getNome() {
@@ -14,4 +23,14 @@ public class Categoria {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
 }
