@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form version="1.0" maxVersion="1.0" type="Form" bindToClass="visao.TelaReajustePreco">
+  <properties>
+    <property name="layoutManager">
+      <object class="com.intellij.uiDesigner.core.AbsoluteLayout" />
+    </property>
+    <property name="title" type="string" value="Reajuste de Preços" />
+    <property name="defaultCloseOperation" type="int" value="2" /> <!-- JFrame.DISPOSE_ON_CLOSE -->
+    <property name="size" type="dimension" width="320" height="160" />
+    <property name="locationRelativeTo" type="null" />
+  </properties>
+
+  <component id="lblPercentual" class="javax.swing.JLabel" text="Percentual (%):">
+    <constraints>
+      <xy x="10" y="20" width="100" height="25" />
+    </constraints>
+  </component>
+
+  <component id="txtPercentual" class="javax.swing.JTextField">
+    <constraints>
+      <xy x="120" y="20" width="150" height="25" />
+    </constraints>
+  </component>
+
+  <component id="btnAplicar" class="javax.swing.JButton" text="Aplicar Reajuste">
+    <constraints>
+      <xy x="40" y="70" width="120" height="30" />
+    </constraints>
+  </component>
+
+  <component id="btnLimpar" class="javax.swing.JButton" text="Limpar">
+    <constraints>
+      <xy x="180" y="70" width="90" height="30" />
+    </constraints>
+  </component>
+
+</form>
+
