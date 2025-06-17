@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form version="1.0" maxVersion="1.0" type="Form" bindToClass="visao.TelaCadastroCategoria">
+  <properties>
+    <property name="layoutManager">
+      <object class="com.intellij.uiDesigner.core.AbsoluteLayout" />
+    </property>
+    <property name="title" type="string" value="Cadastro de Categoria" />
+    <property name="defaultCloseOperation" type="int" value="2" /> <!-- JFrame.DISPOSE_ON_CLOSE -->
+    <property name="size" type="dimension" width="320" height="230" />
+    <property name="locationRelativeTo" type="null" />
+  </properties>
+
+  <component id="lblId" class="javax.swing.JLabel" text="ID:">
+    <constraints>
+      <xy x="10" y="10" width="100" height="25" />
+    </constraints>
+  </component>
+  <component id="txtId" class="javax.swing.JTextField">
+    <constraints>
+      <xy x="120" y="10" width="150" height="25" />
+    </constraints>
+  </component>
+
+  <component id="lblNome" class="javax.swing.JLabel" text="Nome:">
+    <constraints>
+      <xy x="10" y="45" width="100" height="25" />
+    </constraints>
+  </component>
+  <component id="txtNome" class="javax.swing.JTextField">
+    <constraints>
+      <xy x="120" y="45" width="150" height="25" />
+    </constraints>
+  </component>
+
+  <component id="lblTamanho" class="javax.swing.JLabel" text="Tamanho:">
+    <constraints>
+      <xy x="10" y="80" width="100" height="25" />
+    </constraints>
+  </component>
+  <component id="txtTamanho" class="javax.swing.JTextField">
+    <constraints>
+      <xy x="120" y="80" width="150" height="25" />
+    </constraints>
+  </component>
+
+  <component id="lblEmbalagem" class="javax.swing.JLabel" text="Embalagem:">
+    <constraints>
+      <xy x="10" y="115" width="100" height="25" />
+    </constraints>
+  </component>
+  <component id="txtEmbalagem" class="javax.swing.JTextField">
+    <constraints>
+      <xy x="120" y="115" width="150" height="25" />
+    </constraints>
+  </component>
+
+  <component id="btnSalvar" class="javax.swing.JButton" text="Salvar">
+    <constraints>
+      <xy x="40" y="160" width="100" height="30" />
+    </constraints>
+  </component>
+
+  <component id="btnLimpar" class="javax.swing.JButton" text="Limpar">
+    <constraints>
+      <xy x="170" y="160" width="100" height="30" />
+    </constraints>
+  </component>
+
+</form>
